@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/project.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator Application</title>
+  </head>
+
+  <body>
+    <div class="close"><a href="index.html#projects">X</a></div>
+
+    <div id="about" class="blog-project">
+      <div class="two-column-wrapper">
+        <div>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="./images/calc1.PNG" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="./images/calc2.PNG" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="./images/calc3.PNG" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="./images/calc4.PNG" style="width: 100%" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </div>
+
+        <div class="profile-content-wrapper">
+          <h1>Calculator Application</h1>
+          <p>
+            A simple and fun Calculator application that allows for addition,
+            subtraction, multiplication, and division of simple calculations.
+          </p>
+          <hr />
+          <div class="small-details">
+            <p><strong>Project:</strong> Calculator Application</p>
+
+            <p><strong>Technologies:</strong> HTML, CSS, JAVASCRIPT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

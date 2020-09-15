@@ -1,0 +1,177 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f0ede6;
+}
+
+.main-nav {
+  height: 100px;
+  display: flex;
+  background-color: #111111;
+  align-items: center;
+}
+
+.links {
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.links a:hover {
+  color: orange;
+}
+
+.profile-picture {
+  width: 125px;
+}
+
+.profile-picture img {
+  width: 200px;
+  height: auto;
+}
+
+.main-image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.main-image-container img {
+  filter: brightness(30%);
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.about-me {
+  padding: 30px;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: orange;
+}
+
+.separate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume {
+  background-color: #ffcc54;
+  color: white;
+  border: 1px solid #ffc02b;
+  border-radius: 30px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.my-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.skill-card {
+  height: 275px;
+  width: 300px;
+  background: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.skill-card img {
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.project-card {
+  height: 275px;
+  width: 300px;
+  background: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#project-one {
+  background-color: orange;
+}
+
+#project-two {
+  background-color: teal;
+}
+
+#project-three {
+  background-color: red;
+}
+
+.projects a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-card img {
+  padding: 10px;
+  width: 50%;
+}
+
+footer {
+  background-color: #111111;
+  color: #f0ede6;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: blue;
+}
