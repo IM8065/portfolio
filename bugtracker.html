@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/jpg" href="./images/favicon-16x16.png" />
-    <title>Custom Blog Application</title>
+    <title>Bugtracker Application</title>
   </head>
 
   <body>
@@ -21,31 +21,46 @@
       <div class="project-showcase">
         <div>
           <div class="slideshow-container">
+            
             <div class="mySlides fade">
-              <div class="numbertext">1 / 6</div>
-              <img src="./images/blog1.PNG" />
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 6</div>
-              <img src="./images/blog2.PNG" />
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 6</div>
-              <img src="./images/blog3.png" />
+              <div class="numbertext">1 / 10</div>
+              <img src="./images/bt1.PNG" />
             </div>
             <div class="mySlides fade">
-              <div class="numbertext">4 / 6</div>
-              <img src="./images/blog4.png" />
+              <div class="numbertext">2 / 10</div>
+              <img src="./images/bt2.PNG" />
             </div>
             <div class="mySlides fade">
-              <div class="numbertext">5 / 6</div>
-              <img src="./images/blog5.png" />
+              <div class="numbertext">3 / 10</div>
+              <img src="./images/bt3.PNG" />
             </div>
             <div class="mySlides fade">
-              <div class="numbertext">6 / 6</div>
-              <img src="./images/blog6.png" />
+              <div class="numbertext">4 / 10</div>
+              <img src="./images/bt4.PNG" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 10</div>
+              <img src="./images/bt5.PNG" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 10</div>
+              <img src="./images/bt6.PNG" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 10</div>
+              <img src="./images/bt7.PNG" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">8 / 10</div>
+              <img src="./images/bt8.PNG" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">9 / 10</div>
+              <img src="./images/bt9.PNG" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">10 / 10</div>
+              <img src="./images/bt10.PNG" />
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -60,34 +75,38 @@
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
           </div>
         </div>
 
         <div class="project-description">
-          <h1>Custom Blog Application</h1>
+          <h1>Bugtracker Application</h1>
           <p>
-            Many people create blogs, as they are really great ways to talk and
-            share about content that they are interested in. I created a small
-            blog application with basic functionality that includes Sign in &
-            Register, Create Article/Blog, Liking the Post, Creating Comments,
-            and of course reading the most recent posts.
+            Created a bug tracker application using ASP.NET Core 3.0 MVC, where
+            projects can be made with tickets assigned to it indicating bugs. The ticket
+            is customizable with a user being able to specify the status (open/closed)
+            and severity of the problem. The application also has Authentication and
+            Authorization with different user roles, Administrator and a regular user.
+            The Administrator has more privileges than the regular user such as
+            deleting other users and creating and assigning roles.
           </p>
           <hr />
           <div class="small-details">
-            <p><strong>Project:</strong> Custom Blog Application</p>
+            <p><strong>Project:</strong> Bugtracker Application</p>
 
-            <p><strong>Technologies:</strong> React, PostgreSQL, Express</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JAVASCRIPT</p>
           </div>
-
           <div class="link">
-            <a href="https://github.com/IM8065/blog_app" class="button-style"
-              >See Project Code</a
-            >
+            <a href="https://github.com/IM8065/BugtrackerApplication" class="button-style">
+              See Project Code
+            </a>
           </div>
         </div>
       </div>
     </div>
-
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);
